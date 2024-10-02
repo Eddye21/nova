@@ -1,0 +1,48 @@
+
+.principal-conteiner{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    padding-top: 30%;
+}
+
+.navbar{
+    background-color: #1e1e1e;
+    border-radius: 20rem;
+    padding-top: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    height: 5.3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-item, .title{
+    text-decoration: none;
+    color: #ccc;
+}
+
+.products{
+    padding-top: 1.5rem;
+    column-gap: 2rem;
+    display: flex;
+    list-style-type: none;
+}
+
+.car-conteiner{
+    position: relative;
+}
+
+.carwitget {
+    padding-top: 1rem;
+}
+
+.buble{
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
+    border-radius: 100%;
+    background-color: #03c;
+    color: #ccc;
+    position: absolute;
+}
