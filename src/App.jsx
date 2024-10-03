@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <NavBar/>
-      <ItemListConteiner text='Nova la mejor tienda' />
+      <ItemListConteiner text='Nova la mejor tienda...proximamente..' />
     </>
   )
 }
