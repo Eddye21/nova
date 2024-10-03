@@ -3,7 +3,9 @@
     width: 100vw;
     height: 100vh;
     text-align: center;
-    padding-top: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .navbar{
@@ -22,11 +24,20 @@
     color: #ccc;
 }
 
+.title:hover{
+    filter: drop-shadow(5px 5px 35px #3584e4);
+}
+
+.product-item:hover{
+    filter: drop-shadow(5px 5px 35px #3584e4);
+}
+
 .products{
     padding-top: 1.5rem;
     column-gap: 2rem;
     display: flex;
     list-style-type: none;
+    padding-right: 4rem;
 }
 
 .car-conteiner{
