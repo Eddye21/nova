@@ -9,5 +9,5 @@ export function CarWitget() {
             <span className="buble" > {1} </span>
         </div>
     </>
-    );
+    )
 }

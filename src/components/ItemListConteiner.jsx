@@ -1,10 +1,8 @@
-/* eslint-disable react/prop-types */
 import '../navbar.css'
+import { ItemList } from "./ItemList";
 
-export function ItemListConteiner ({text}) {
+export function ItemListConteiner () {
     return (
-        <section className='principal-conteiner'>
-            <h1> {text} </h1>
-        </section>
+        <ItemList/>
     )
 }
