@@ -1,0 +1,24 @@
+.counter{
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.minus, .plus{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 3rem;
+    border-radius: 7px;
+}
+
+.plus:hover{
+    border: 1px green solid;
+}
+
+.minus:hover{
+    border: 1px red solid
+}
+
+.add{
+    border-radius: 7px;
+}
