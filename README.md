@@ -1,6 +1,6 @@
 # Nova un ecommerce de Vehículos
 
-Este es un ecommerce de vehículos hecho con React + Vite y Javascript vainilla. Permite a los usuarios ver todas las cards de productos, acceder al detalle de cada card, agregar productos al carrito y completar la compra mediante un formulario.
+Este es un ecommerce de vehículos hecho con React + Vite y Javascript vainilla. 
 
 ## Funcionalidades
 
