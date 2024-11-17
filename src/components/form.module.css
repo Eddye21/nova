@@ -1,0 +1,37 @@
+.title{
+    margin-bottom: 3rem;
+}
+
+.form{
+    width:25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    text-align: center;
+    height: 3rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+}
+
+.submit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submitButton{
+    width: 50%;
+    height: 2.5rem;
+    border-radius: 2rem;
+    background-color: #242424;
+    border: 1px solid #1e1e1e;
+}
+
+.submitButton:hover{
+    border: 1px solid green;
+    transition: 1s;
+}

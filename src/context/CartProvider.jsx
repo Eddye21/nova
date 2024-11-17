@@ -18,7 +18,8 @@ function CartProvider ({children}) {
     const getTotal = () => {
         const priceOnly = cart.map(item => item.price*item.qty)
         const total = priceOnly.reduce((acc, current) => acc + current, 0)
-        return total
+        const roundedTotal = total.toFixed(2)
+        return roundedTotal
     }
 
     return (
