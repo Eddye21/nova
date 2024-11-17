@@ -1,8 +1,26 @@
-# React + Vite
+# Nova un ecommerce de Vehículos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un ecommerce de vehículos hecho con React + Vite y Javascript vainilla. 
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Ver todas las cards de vehículos
+- Ver el detalle de cada card
+- Agregar vehículos al carrito
+- Completar la compra mediante un formulario
+
+## Dependencias
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [React Spinners](https://www.npmjs.com/package/react-spinners)
+- [React Bootstrap](https://react-bootstrap.github.io/)
+- [React SweetAlert](https://github.com/chentsulin/sweetalert-react)
+
+## Proyecto realizado por Eduardo Moyla
+
+## Instalación
+
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/tuusuario/tu-repositorio.git
