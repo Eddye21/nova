@@ -1,46 +1,33 @@
-import '../navbar.css'
-import { useState, useEffect } from "react";
-import { products } from "../db/products";
-import { useParams } from 'react-router-dom';
-import ItemList from "./ItemList";
+import { useState, useEffect } from "react"
+import { useParams } from 'react-router-dom'
+import ItemList from "./ItemList"
 import styles from "./itemListConteiner.module.css"
-import { PacmanLoader } from 'react-spinners';
+import { getData, filterCategory } from '../firebase/db'
+import { PacmanLoader } from 'react-spinners'
 
 
 function ItemListConteiner() {
-    const [items, setItem] = useState([]);
+    const [items, setItems] = useState([]);
 
     const {id} = useParams()
 
-
-    const getProducts = () =>
-    new Promise((res) => {
-        setTimeout(() => res(products), 2000);
-    });
-
     useEffect(() => {
-        getProducts().then((res) => {
-            let filteredItems = res; 
-    
-            if (id) {
-                filteredItems = res.filter(item => item.category === id);
-            }
-    
-            setItem(filteredItems);
-        });
+
+        if (!id) {
+            getData()
+            .then(res => setItems(res))
+        } else {
+            filterCategory(id)
+            .then(res => setItems(res))
+        }
+
     }, [id]);
 
     return (
         <>
-            {
-                items.length > 0 ? 
-                    <div className={styles.principal}> 
-                        <ItemList  items={items}/>
-                    </div> :
-                    <div className={styles.principal}>
-                        <PacmanLoader/>
-                    </div>
-            }
+            {items?.length > 0 ? 
+            <div className={styles.principal}> <ItemList  items={items}/></div> 
+            : <div className={styles.principal}> <PacmanLoader/> </div>}
         </>
     )
 }
