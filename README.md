@@ -16,6 +16,8 @@ Este es un ecommerce de vehículos hecho con React + Vite y Javascript vainilla.
 - [React Spinners](https://www.npmjs.com/package/react-spinners)
 - [React Bootstrap](https://react-bootstrap.github.io/)
 - [React SweetAlert](https://github.com/chentsulin/sweetalert-react)
+- [Firebase](https://firebase.google.com/)
+- [React Router](https://reactrouter.com/en/main)
 
 ## Proyecto realizado por Eduardo Moyla
 
