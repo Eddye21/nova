@@ -11,7 +11,8 @@ function ItemDetailConteiner() {
 
         <div>
         {product ? (
-            <ItemDetail 
+            <ItemDetail
+                detail={product}
                 title={product.title}
                 img={product.img}
                 price={product.price}

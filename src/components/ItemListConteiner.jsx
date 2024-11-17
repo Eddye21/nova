@@ -12,6 +12,7 @@ function ItemListConteiner() {
 
     const {id} = useParams()
 
+
     const getProducts = () =>
     new Promise((res) => {
         setTimeout(() => res(products), 2000);
