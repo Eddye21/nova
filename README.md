@@ -1,4 +1,4 @@
-# Ecommerce de Vehículos
+# Nova un ecommerce de Vehículos
 
 Este es un ecommerce de vehículos hecho con React + Vite y Javascript vainilla. Permite a los usuarios ver todas las cards de productos, acceder al detalle de cada card, agregar productos al carrito y completar la compra mediante un formulario.
 
@@ -17,7 +17,7 @@ Este es un ecommerce de vehículos hecho con React + Vite y Javascript vainilla.
 - [React Bootstrap](https://react-bootstrap.github.io/)
 - [React SweetAlert](https://github.com/chentsulin/sweetalert-react)
 
-##Proyecto realizado por Eduardo Moyla
+## Proyecto realizado por Eduardo Moyla
 
 ## Instalación
 
