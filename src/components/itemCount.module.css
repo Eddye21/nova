@@ -11,14 +11,30 @@
     border-radius: 7px;
 }
 
+.minus{
+    background-color: #1e1e1e;
+    border: 1px solid red;
+}
+
+.plus{
+    background-color: #1e1e1e;
+    border: 2px green solid;
+    transition: 2s;
+}
+
 .plus:hover{
-    border: 1px green solid;
+    border-radius: 2rem;
+    transition: 2s;
 }
 
 .minus:hover{
-    border: 1px red solid
+    border-radius: 2rem;
+    transition: 2s;
 }
 
 .add{
+    width: 16rem;
     border-radius: 7px;
+    background-color: #1e1e1e;
+    border: 1px solid #0d6efd;
 }

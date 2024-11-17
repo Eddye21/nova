@@ -4,6 +4,8 @@ import { products } from "../db/products";
 import { useParams } from 'react-router-dom';
 import ItemList from "./ItemList";
 import styles from "./itemListConteiner.module.css"
+import { PacmanLoader } from 'react-spinners';
+
 
 function ItemListConteiner() {
     const [items, setItem] = useState([]);
@@ -28,9 +30,17 @@ function ItemListConteiner() {
     }, [id]);
 
     return (
-        <div className={styles.conteiner}> 
-            <ItemList  items={items}/>
-        </div>
+        <>
+            {
+                items.length > 0 ? 
+                    <div className={styles.principal}> 
+                        <ItemList  items={items}/>
+                    </div> :
+                    <div className={styles.principal}>
+                        <PacmanLoader/>
+                    </div>
+            }
+        </>
     )
 }
 

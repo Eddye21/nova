@@ -6,7 +6,7 @@ export function CarWitget() {
     <>
         <div className='car-conteiner' >
             <a href="..."><img className="carwitget" src={carLogo} alt="img" /></a>
-            <span className="buble" > {1} </span>
+            <span className="buble" > {14} </span>
         </div>
     </>
     )

@@ -1,15 +1,16 @@
 
-.card{
-    padding-top: 2rem;
-    margin: 1rem;
-    border: 1px solid #03c;
-    width: 18rem;
-    height: 18rem;
+.cardBody{
+    margin-top: 2rem;
+    width: 16rem;
     text-align: center;
 }
 
 .img{
-    width: 17rem;
-    height: 25rem;
+    width: 286px;
+    height: 190px;
+    object-fit: cover;
+}
 
+.add{
+    width: 12rem;
 }
