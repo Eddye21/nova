@@ -2,7 +2,7 @@ import { useCart } from "../context/cartContext"
 import { useNavigate } from "react-router-dom"
 import trashLogo from "../icono-basura.svg"
 import styles from "./cart.module.css"
-import Swal from 'sweetalert2'
+import Swal from "sweetalert2"
 import Form from './Form'
 
 
@@ -15,11 +15,12 @@ function Cart() {
     const haddleErase = () => clearCart()
 
 
-    const alert = () => {
+    const alertEmpty = () => {
         Swal.fire({
             title: "El carrito esta vacio",
             icon: "error"})
     }
+
 
 
     return (
@@ -38,7 +39,7 @@ function Cart() {
                             <p> Total: {getTotal()} </p>
                         </div>
                 </div>
-                {cart.length > 0 ? <Form cart={cart}/> : <p> {alert()} </p> }
+                {cart.length > 0 ? <Form cart={cart}/> : <p> {alertEmpty()} </p> }
                 <div className={styles.button}>
                     <button className={styles.buttonBack} onClick={haddleGoBack}> Ir a pagina inicio </button>
                 </div>

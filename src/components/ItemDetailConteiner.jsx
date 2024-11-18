@@ -2,6 +2,8 @@ import { useParams } from "react-router-dom";
 import ItemDetail from "./ItemDetail";
 import { useEffect, useState } from "react";
 import { getItem } from "../firebase/db";
+import { PacmanLoader } from "react-spinners";
+import styles from "./itemDetailConteiner.module.css"
 
 function ItemDetailConteiner() {
     const [detail, setDetail] = useState()
@@ -23,7 +25,7 @@ function ItemDetailConteiner() {
                 price={detail.price}
             />
         ): (
-            <p>Producto no encontrado.</p>
+            <div className={styles.principal}> <PacmanLoader/> </div>
         )}
         </div>
     );
