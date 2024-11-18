@@ -21,8 +21,6 @@ Este es un ecommerce de vehículos hecho con React + Vite y Javascript vainilla.
 
 ## Proyecto realizado por Eduardo Moyla
 
-## Instalación
-
 1. Clonar el repositorio:
    ```bash
    git clone https://github.com/tuusuario/tu-repositorio.git
